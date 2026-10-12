@@ -294,3 +294,70 @@ body{background:#0f172a;color:#e2e8f0}
 .footer a:hover{color:#fff}
 .to-top{background:#3b82f6;border-color:#3b82f6;color:#fff}
 .btn:focus-visible{outline-color:#60a5fa}
+
+/* ============================================
+   TEXT CONTRAST FIX — dark text on dark bg
+   ============================================ */
+
+/* hero bold words were invisible */
+.intro b,.lead b,.prose b,.cs-main b{color:#f1f5f9}
+
+/* blog card titles + body */
+.blog-card{color:#e2e8f0}
+.blog-card h3{color:#f1f5f9}
+.blog-more{color:#e2e8f0}
+
+/* card title links */
+.card-body h3 a{color:#f1f5f9}
+.card-body h3 a:hover{color:#60a5fa}
+
+/* info box / quick info rows */
+.info-row b,.fact b{color:#f1f5f9}
+.info-row span,.fact span{color:#94a3b8}
+.info-box h3,.facts .mono{color:#e2e8f0}
+.info-box p{color:#cbd5e1}
+
+/* skill card chip text */
+.chip,.tag{color:#e2e8f0}
+
+/* case study side card */
+.side-card{background:#1a2436;border-color:#2d3a52}
+.side-card .mono{color:#94a3b8}
+.side-card p{color:#cbd5e1}
+
+/* timeline */
+.t-box h3{color:#f1f5f9}
+.t-box p{color:#cbd5e1}
+
+/* contact card labels */
+.c-card{color:#e2e8f0}
+.c-card b{color:#94a3b8}
+
+/* notes section links */
+.link,.sec-head .btn-outline{color:#60a5fa}
+.link:hover{color:#93c5fd}
+
+/* filter buttons on dark */
+.filter-btn{background:#1a2436;border-color:#2d3a52;color:#cbd5e1}
+.filter-btn:hover{border-color:#64748b;color:#f1f5f9}
+.filter-btn.active{background:#3b82f6;border-color:#3b82f6;color:#fff}
+
+/* proof line + footer text */
+.proof{color:#94a3b8}
+
+/* ---------- article pages ---------- */
+.article h1{color:#f1f5f9}
+.article .meta{color:#94a3b8;border-bottom-color:#2d3a52}
+.article h2{color:#f1f5f9}
+.article p{color:#cbd5e1}
+.article li{color:#cbd5e1}
+.article b{color:#f1f5f9}
+.article .back{color:#94a3b8}
+.article .back:hover{color:#f1f5f9}
+.article .eyebrow{color:#60a5fa}
+.article pre{background:#080f1c;border:1px solid #2d3a52;color:#e7e5e4}
+.article code{background:#1a2436;border-color:#2d3a52;color:#7dd3fc}
+.article .callout{background:#141d2e;border-color:#2d3a52;border-left-color:#3b82f6;color:#cbd5e1}
+
+/* blog card links inside article back */
+.blog-more{color:#e2e8f0}
