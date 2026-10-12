@@ -40,9 +40,9 @@
             Based in India, I like work that's simple, fast and useful.
           </p>
           <div class="hero-btns">
-            <a href="#projects" class="btn">View my work</a>
-            <a href="assets/resume.pdf" class="btn btn-outline">Resume ↓</a>
-            <a href="#contact" class="btn btn-outline">Get in touch</a>
+            <a href="#projects" class="btn">View my work <span class="arr">→</span></a>
+            <a href="assets/resume.pdf" class="btn btn-outline">Resume <span class="arr">↓</span></a>
+            <a href="#contact" class="btn btn-outline">Get in touch <span class="arr">→</span></a>
           </div>
           <p class="proof">Built 10+ projects · 5+ dashboards · Freelance for local clients</p>
           <div class="hero-meta">
@@ -179,70 +179,76 @@
           <a href="https://github.com/yasar-memon" target="_blank" rel="noopener" class="btn btn-outline">All repos ↗</a>
         </div>
 
-        <div class="projects-grid">
-          <div class="card featured">
-            <div class="thumb t-blue">📊<span>Dashboard</span></div>
+        <div class="filter-bar" id="filterBar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="data">Data & Analytics</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+          <div class="card featured" data-cat="data">
+            <div class="thumb t-blue"><span class="cat-pill">Data</span>📊<span>Dashboard</span></div>
             <div class="card-body">
               <p class="kicker">Power BI · SQL</p>
               <h3>Sales Performance Dashboard</h3>
               <p>Monthly sales trends, top products, region-wise KPIs. SQL views for source data, slicers + drill-through in Power BI.</p>
               <div class="tags"><span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">DAX</span></div>
-              <div class="card-links"><a href="case-study-sales.html">Full case study →</a><a href="https://github.com/yasar-memon">Code ↗</a></div>
+              <div class="card-foot"><a class="btn-link" href="case-study-sales.html">Case study <span>→</span></a><a class="btn-link ghost" href="https://github.com/yasar-memon">Code ↗</a></div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="thumb t-green">✓<span>React</span></div>
+          <div class="card" data-cat="frontend">
+            <div class="thumb t-green"><span class="cat-pill">Frontend</span>✓<span>React</span></div>
             <div class="card-body">
               <p class="kicker">React · JavaScript</p>
               <h3>Trading Desk Table</h3>
               <p>Sortable trade blotter with search and column sorting. Practiced state + memo + large lists.</p>
               <div class="tags"><span class="tag">React</span><span class="tag">JS</span></div>
-              <div class="card-links"><a href="https://github.com/yasar-memon">Live →</a><a href="https://github.com/yasar-memon">Code ↗</a></div>
+              <div class="card-foot"><a class="btn-link" href="https://github.com/yasar-memon">Live <span>→</span></a><a class="btn-link ghost" href="https://github.com/yasar-memon">Code ↗</a></div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="thumb t-yellow">☰<span>JS App</span></div>
+          <div class="card" data-cat="frontend">
+            <div class="thumb t-yellow"><span class="cat-pill">Frontend</span>☰<span>JS App</span></div>
             <div class="card-body">
               <p class="kicker">HTML · CSS · JS</p>
               <h3>Todos List App</h3>
               <p>Task manager with filters and localStorage persistence. Focus on clean DOM code.</p>
               <div class="tags"><span class="tag">JavaScript</span><span class="tag">localStorage</span></div>
-              <div class="card-links"><a href="https://github.com/yasar-memon">Live →</a><a href="https://github.com/yasar-memon">Code ↗</a></div>
+              <div class="card-foot"><a class="btn-link" href="https://github.com/yasar-memon">Live <span>→</span></a><a class="btn-link ghost" href="https://github.com/yasar-memon">Code ↗</a></div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="thumb t-purple">◩<span>Excel</span></div>
+          <div class="card" data-cat="data">
+            <div class="thumb t-purple"><span class="cat-pill">Data</span>◩<span>Excel</span></div>
             <div class="card-body">
               <p class="kicker">Excel · Cleaning</p>
               <h3>Clinic Leads Toolkit</h3>
               <p>Deduped 5k+ rows, fixed phone formats, added pivot summary for follow-ups.</p>
               <div class="tags"><span class="tag">Excel</span><span class="tag">Pivot</span></div>
-              <div class="card-links"><a href="https://github.com/yasar-memon">Details →</a><a href="https://github.com/yasar-memon">File ↗</a></div>
+              <div class="card-foot"><a class="btn-link" href="https://github.com/yasar-memon">Details <span>→</span></a><a class="btn-link ghost" href="https://github.com/yasar-memon">File ↗</a></div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="thumb t-dark">❯<span>Python</span></div>
+          <div class="card" data-cat="data">
+            <div class="thumb t-dark"><span class="cat-pill">Data</span>❯<span>Python</span></div>
             <div class="card-body">
               <p class="kicker">Python · pandas</p>
               <h3>Expense Analyzer</h3>
               <p>Reads CSV, gives monthly summary + matplotlib charts. Good for personal finance.</p>
               <div class="tags"><span class="tag">Python</span><span class="tag">pandas</span></div>
-              <div class="card-links"><a href="https://github.com/yasar-memon">Details →</a><a href="https://github.com/yasar-memon">Code ↗</a></div>
+              <div class="card-foot"><a class="btn-link" href="https://github.com/yasar-memon">Details <span>→</span></a><a class="btn-link ghost" href="https://github.com/yasar-memon">Code ↗</a></div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="thumb t-grey">◐<span>Tableau</span></div>
+          <div class="card" data-cat="data">
+            <div class="thumb t-grey"><span class="cat-pill">Data</span>◐<span>Tableau</span></div>
             <div class="card-body">
               <p class="kicker">Tableau · Viz</p>
               <h3>Superstore Viz (Tableau)</h3>
               <p>Profit vs discount analysis with filters. Practiced LODs and storytelling.</p>
               <div class="tags"><span class="tag">Tableau</span><span class="tag">Viz</span></div>
-              <div class="card-links"><a href="https://github.com/yasar-memon">Details →</a><a href="https://github.com/yasar-memon">Workbook ↗</a></div>
+              <div class="card-foot"><a class="btn-link" href="https://github.com/yasar-memon">Details <span>→</span></a><a class="btn-link ghost" href="https://github.com/yasar-memon">Workbook ↗</a></div>
             </div>
           </div>
         </div>
@@ -391,6 +397,8 @@
       <p><a href="#top">Back to top ↑</a></p>
     </div>
   </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
 </body>

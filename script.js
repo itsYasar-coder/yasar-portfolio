@@ -42,6 +42,33 @@ var io = new IntersectionObserver(function (entries) {
 }, { threshold: 0.08 });
 document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
 
+// project filter
+var filterBtns = document.querySelectorAll(".filter-btn");
+var cards = document.querySelectorAll("#projectsGrid .card");
+if (filterBtns.length) {
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      filterBtns.forEach(function (b) { b.classList.remove("active"); });
+      btn.classList.add("active");
+      var f = btn.getAttribute("data-filter");
+      cards.forEach(function (c) {
+        var show = f === "all" || c.getAttribute("data-cat") === f;
+        c.classList.toggle("hide", !show);
+      });
+    });
+  });
+}
+
+// back to top
+var toTop = document.getElementById("toTop");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 600) toTop.classList.add("show");
+  else toTop.classList.remove("show");
+});
+toTop.addEventListener("click", function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
 // contact form
 var form = document.getElementById("contactForm");
 var note = document.getElementById("formNote");
