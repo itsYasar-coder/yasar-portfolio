@@ -1,30 +1,51 @@
 # Yasar Memon — Portfolio
 
-Simple personal portfolio. Plain HTML + CSS + vanilla JS, no frameworks.
+Personal portfolio website. Plain HTML, CSS and vanilla JavaScript — no frameworks, no build step.
 
-## Run it
+## Sections
 
-Option 1 — just open the file:
-- Double-click `index.html`, or right-click → Open with browser.
+- **Hero** — intro, resume download, quick links
+- **About** — background and what I work on
+- **Skills** — Frontend, Data & Analytics, Languages & Tools
+- **Projects** — filterable cards (All / Frontend / Data)
+- **Case Study** — how one dashboard saved time
+- **Journey** — education and experience timeline
+- **Notes** — short write-ups (separate pages under `blog/`)
+- **Contact** — email, LinkedIn, GitHub + message form
 
-Option 2 — local server (better for testing links):
-```bash
-cd yasar-portfolio-final
-python3 -m http.server 8000
-# then open http://localhost:8000
+## Run locally
+
+Option 1 — open the file directly:
+```
+index.html
 ```
 
-Or with node:
+Option 2 — local server (recommended):
+```bash
+python3 -m http.server 8000
+```
+Then open http://localhost:8000
+
+Or with Node:
 ```bash
 npx serve .
 ```
 
+## Deploy
+
+Built for Vercel / Netlify / GitHub Pages with no config. Since there is no build step,
+set the output directory to the repo root and leave the build command empty.
+
 ## Files
 
-- `index.html` — all sections (hero, about, skills, projects, education, contact)
-- `style.css` — plain styles, max-width 900px, one mobile breakpoint
-- `script.js` — year, mobile menu, active link, form validation
-- `assets/resume.pdf` — put your resume here (navbar button links to `#contact` until then)
+| File | Purpose |
+|------|---------|
+| `index.html` | Main page, all sections |
+| `style.css` | All styling (single file, one mobile breakpoint) |
+| `script.js` | Mobile menu, active nav link, project filter, reveal on scroll, form validation |
+| `case-study-sales.html` | Full case study page |
+| `blog/` | Three note pages |
+| `assets/resume.pdf` | Resume (replace with the real one) |
 
 ## Contact
 

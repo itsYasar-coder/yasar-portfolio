@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# editors
+.vscode/
+.idea/
+
+# node (not used but just in case)
+node_modules/
+
+# local env
+.env
+.env.local
