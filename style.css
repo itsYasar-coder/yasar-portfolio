@@ -239,3 +239,58 @@ a:hover{text-decoration:underline}
   .section h2{font-size:25px}
   .footer-inner{flex-direction:column}
 }
+
+/* ============================================
+   BACKGROUND OVERRIDE v8
+   Deep navy page background, dark cards.
+   ============================================ */
+body{background:#0f172a;color:#e2e8f0}
+.hero{background:#0f172a;border-bottom:1px solid #1e293b}
+.section.alt{background:#141d2e;border-top:1px solid #1e293b;border-bottom:1px solid #1e293b}
+.section{background:transparent}
+.section h2,.hero h1{color:#f1f5f9}
+.hero h1 span{color:#94a3b8}
+.muted{color:#94a3b8}
+.lead,.intro{color:#cbd5e1}
+.subtitle,.role{color:#cbd5e1}
+.card,.skill-card,.profile-card,.info-box,.cs-main,.mini-list,.blog-card,.contact-form,.t-box,.c-card,.info-row{background:#1a2436;border-color:#2d3a52}
+.card-body h3,.skill-card h3,.cs-main h3,.t-box h3,.contact-form h3{color:#f1f5f9}
+.card-body p,.skill-card p,.cs-main p,.cs-list,.t-box p{color:#cbd5e1}
+.contact-form input,.contact-form textarea{background:#0f172a;border-color:#334155;color:#e2e8f0}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#64748b}
+.contact-form label{color:#cbd5e1}
+.badge{background:#1a2436;border-color:#2d3a52;color:#cbd5e1}
+.tag{background:#1a2436;border-color:#2d3a52;color:#cbd5e1}
+.check-list div{background:#1a2436;border-color:#2d3a52;color:#cbd5e1}
+.btn{background:#3b82f6;border-color:#3b82f6}
+.btn:hover{background:#60a5fa}
+.btn-outline{background:transparent;color:#e2e8f0;border-color:#334155}
+.btn-outline:hover{background:#1a2436;color:#f1f5f9;border-color:#64748b}
+.stats{background:#0f172a;border-color:#2d3a52}
+.stack span{background:#1a2436;border-color:#2d3a52;color:#cbd5e1}
+.strip{background:#141d2e;border-bottom:1px solid #1e293b;color:#cbd5e1}
+.nav{background:rgba(15,23,42,.9);border-bottom:1px solid transparent}
+.nav.scrolled{border-bottom-color:#1e293b;box-shadow:0 4px 18px rgba(0,0,0,.3)}
+.nav-links a{color:#cbd5e1}
+.nav-links a:hover,.nav-links a.active{color:#fff}
+.logo{color:#f1f5f9}
+.logo-dot{color:#60a5fa}
+.btn-small{background:#3b82f6;border-color:#3b82f6}
+.timeline:before{background:#2d3a52}
+.t-dot{background:#0f172a;border-color:#60a5fa}
+.t-box .date{color:#60a5fa}
+.metrics{background:#2d3a52;border-color:#2d3a52}
+.metrics div{background:#1a2436}
+.metrics b{color:#f1f5f9}
+.metrics span{color:#94a3b8}
+.quote{background:#1a2436;border:1px solid #2d3a52}
+.blog-card p{color:#cbd5e1}
+.blog-card .date{color:#60a5fa}
+.c-card b{color:#94a3b8}
+.c-card span{color:#60a5fa}
+.c-card:hover{background:#1a2436}
+.footer{background:#080f1c;border-top:1px solid #1e293b;color:#64748b}
+.footer a{color:#94a3b8}
+.footer a:hover{color:#fff}
+.to-top{background:#3b82f6;border-color:#3b82f6;color:#fff}
+.btn:focus-visible{outline-color:#60a5fa}
