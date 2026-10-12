@@ -361,3 +361,68 @@ body{background:#0f172a;color:#e2e8f0}
 
 /* blog card links inside article back */
 .blog-more{color:#e2e8f0}
+
+/* ============================================
+   BUGFIX v9
+   1) sticky nav hid section headings on anchor jump
+   2) .section p had higher specificity than .muted,
+      so muted paragraphs rendered dark-on-dark
+   3) skill bar labels invisible
+   4) ghost/card button + hover tweaks for dark bg
+   ============================================ */
+
+/* ---- 1) anchor offset for the 66px sticky navbar ---- */
+html{scroll-padding-top:84px}
+section[id]{scroll-margin-top:84px}
+.blog-card,.t-box,.skill-card{scroll-margin-top:96px}
+
+/* ---- 2) paragraph / list contrast (beats .section p) ---- */
+.section p,.section .muted,.section p.muted,.section p.small,
+.card-body p,.cs-main p,.cs-list,.cs-list li,.t-box p,
+.skill-card p,.skill-card p.muted,.info-box p,.info-box p.muted,
+.blog-card p,.quote-card p,.mini-list span{
+  color:#cbd5e1
+}
+/* secondary/meta text stays dimmer but readable */
+.section p.muted,.section .muted.small,.muted.small{color:#94a3b8}
+
+/* ---- 3) skill bar labels + track on dark ---- */
+.bar-top{color:#cbd5e1}
+.bar{background:#0f172a}
+.bar i{background:#3b82f6}
+.skill-card hr,.info-box hr{border-color:#2d3a52}
+
+/* ---- 4) buttons / cards tuned for dark ---- */
+.btn-link{background:#3b82f6}
+.btn-link:hover{background:#60a5fa}
+.btn-link.ghost{background:transparent;color:#cbd5e1;border-color:#334155}
+.btn-link.ghost:hover{background:#1f2b40;color:#f1f5f9;border-color:#64748b}
+
+.card:hover{border-color:#3b82f6;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.skill-card:hover{border-color:#3b82f6}
+
+.filter-btn:hover{border-color:#64748b}
+.cat-pill{background:rgba(255,255,255,.94);color:#0f172a;opacity:1}
+
+/* hero meta links readable on navy */
+.hero-meta{color:#94a3b8}
+.hero-meta a{color:#93c5fd}
+.hero-meta a:hover{color:#dbeafe}
+
+/* kicker / eyebrow contrast on dark */
+.kicker,.eyebrow{color:#60a5fa}
+
+/* notes card "Read ->" link */
+.blog-card .link{color:#93c5fd}
+
+/* about list + checklist text */
+.about-list{color:#cbd5e1}
+.about-list strong{color:#f1f5f9}
+.check-list div{color:#cbd5e1}
+
+/* form note + placeholder */
+.form-note{color:#94a3b8}
+.contact-form input::placeholder,.contact-form textarea::placeholder{color:#64748b}
+
+/* footer contrast */
+.footer{color:#7c8ba1}

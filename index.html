@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yasar Memon — Frontend Developer & Data Analyst</title>
+  <meta name="theme-color" content="#0f172a">
   <meta name="description" content="Yasar Memon — Frontend Developer (React, JavaScript) with Data Analytics skills (Excel, SQL, Python, Power BI, Tableau).">
-  <link rel="stylesheet" href="style.css?v=8">
+  <link rel="stylesheet" href="style.css?v=9">
 </head>
 <body>
 
@@ -13,12 +14,13 @@
   <header class="nav" id="navbar">
     <div class="wrap nav-inner">
       <a href="#top" class="logo"><span class="logo-box">Y</span> yasar<span class="logo-dot">.dev</span></a>
-      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">☰</button>
       <nav class="nav-links" id="navLinks">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#case-study">Case Study</a>
+        <a href="#journey">Journey</a>
         <a href="#notes">Notes</a>
         <a href="#contact">Contact</a>
         <a href="https://github.com/yasar-memon" target="_blank" rel="noopener" class="btn-small">GitHub ↗</a>
@@ -129,7 +131,7 @@
       <div class="wrap">
         <p class="eyebrow">Skills</p>
         <h2>Tools I actually use</h2>
-        <p class="muted">Grouped by what I use them for. Bars = comfort level, honest ones.</p>
+        <p class="muted">Grouped by what I use them for. Bars show how comfortable I am with each one.</p>
 
         <div class="skills-grid">
           <div class="skill-card">
@@ -180,9 +182,9 @@
         </div>
 
         <div class="filter-bar" id="filterBar">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="frontend">Frontend</button>
-          <button class="filter-btn" data-filter="data">Data & Analytics</button>
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="frontend" aria-pressed="false">Frontend</button>
+          <button class="filter-btn" data-filter="data" aria-pressed="false">Data &amp; Analytics</button>
         </div>
 
         <div class="projects-grid" id="projectsGrid">
@@ -256,7 +258,7 @@
     </section>
 
     <!-- featured case study -->
-    <section id="case-study" class="section alt reveal">
+    <section id="case-study" class="section reveal">
       <div class="wrap">
         <p class="eyebrow">Case study</p>
         <h2>How I saved 12 hrs/month with one dashboard</h2>
