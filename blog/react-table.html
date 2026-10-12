@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sortable React table — Yasar Memon</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="article">
+<a href="../index.html" class="back">← Back</a>
+<p class="eyebrow">Notes · React</p>
+<h1>Building a sortable React table (no library)</h1>
+<p class="meta">Aug 2026 · 6 min</p>
+<h2>Pattern</h2>
+<p>State for sort key + direction, <code>useMemo</code> for sorted copy. Don't sort original array — copy with <code>[...data]</code> first.</p>
+<pre><code>const [key, setKey] = useState('date');
+const [dir, setDir] = useState(1);
+const rows = useMemo(() =&gt; {
+  return [...data].sort((a,b) =&gt;
+    a[key] &gt; b[key] ? dir : -dir);
+}, [data, key, dir]);</code></pre>
+<div class="callout">For 1000+ rows add search filter before sort, and keep components small.</div>
+<p><a href="../index.html#projects">See Trading Desk project →</a></p>
+</div>
+</body>
+</html>

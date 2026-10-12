@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How I clean 5k Excel rows — Yasar Memon</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="article">
+<a href="../index.html" class="back">← Back</a>
+<p class="eyebrow">Notes · Excel</p>
+<h1>How I clean 5k Excel rows without losing my mind</h1>
+<p class="meta">Oct 2026 · 4 min</p>
+<h2>My checklist</h2>
+<ol>
+<li>Copy raw file first — never clean original.</li>
+<li>Remove duplicates (Data → Remove Duplicates), note count.</li>
+<li>TRIM + CLEAN for extra spaces, PROPER for names.</li>
+<li>Fix dates: Text to Columns → YYYY-MM-DD.</li>
+<li>XLOOKUP for mapping, not VLOOKUP — handles new columns.</li>
+<li>Pivot to verify totals match raw.</li>
+</ol>
+<div class="callout">Tip: I keep a “changes” sheet — what I removed, why. Client trusts the file more.</div>
+<h2>Common mistakes</h2>
+<p>Merged cells, hardcoded totals, dates as text. Fix these first or every formula breaks later.</p>
+<p><a href="../index.html#contact">Need Excel help? →</a></p>
+</div>
+</body>
+</html>

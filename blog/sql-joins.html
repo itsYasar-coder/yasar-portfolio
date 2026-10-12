@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SQL joins for dashboards — Yasar Memon</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="article">
+<a href="../index.html" class="back">← Back</a>
+<p class="eyebrow">Notes · SQL</p>
+<h1>SQL joins I actually use for dashboards</h1>
+<p class="meta">Sep 2026 · 5 min</p>
+<h2>Only 2 joins cover 90%</h2>
+<p><b>INNER JOIN</b> — when I want only matched rows. Example: bills + products where product exists.</p>
+<p><b>LEFT JOIN</b> — when I want all bills even if product mapping is missing. Missing ones show NULL, which tells me mapping needs fixing.</p>
+<pre><code>-- top products, keep all sales
+SELECT p.name, SUM(s.amount) AS sales
+FROM sales_clean s
+LEFT JOIN products p ON p.code = s.product_code
+GROUP BY 1 ORDER BY 2 DESC LIMIT 5;</code></pre>
+<div class="callout">Rule: dashboard numbers must match Excel pivot first. Then add filters.</div>
+<p><a href="../index.html#projects">See dashboard →</a></p>
+</div>
+</body>
+</html>

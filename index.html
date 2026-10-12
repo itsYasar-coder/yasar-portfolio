@@ -18,7 +18,8 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#journey">Journey</a>
+        <a href="#case-study">Case Study</a>
+        <a href="#notes">Notes</a>
         <a href="#contact">Contact</a>
         <a href="https://github.com/yasar-memon" target="_blank" rel="noopener" class="btn-small">GitHub ↗</a>
       </nav>
@@ -40,8 +41,10 @@
           </p>
           <div class="hero-btns">
             <a href="#projects" class="btn">View my work</a>
+            <a href="assets/resume.pdf" class="btn btn-outline">Resume ↓</a>
             <a href="#contact" class="btn btn-outline">Get in touch</a>
           </div>
+          <p class="proof">Built 10+ projects · 5+ dashboards · Freelance for local clients</p>
           <div class="hero-meta">
             <a href="mailto:yasar.memon@email.com">yasar.memon@email.com</a>
             <span>·</span>
@@ -184,7 +187,7 @@
               <h3>Sales Performance Dashboard</h3>
               <p>Monthly sales trends, top products, region-wise KPIs. SQL views for source data, slicers + drill-through in Power BI.</p>
               <div class="tags"><span class="tag">Power BI</span><span class="tag">SQL</span><span class="tag">DAX</span></div>
-              <div class="card-links"><a href="https://github.com/yasar-memon">Case study →</a><a href="https://github.com/yasar-memon">Code ↗</a></div>
+              <div class="card-links"><a href="case-study-sales.html">Full case study →</a><a href="https://github.com/yasar-memon">Code ↗</a></div>
             </div>
           </div>
 
@@ -246,6 +249,47 @@
       </div>
     </section>
 
+    <!-- featured case study -->
+    <section id="case-study" class="section alt reveal">
+      <div class="wrap">
+        <p class="eyebrow">Case study</p>
+        <h2>How I saved 12 hrs/month with one dashboard</h2>
+        <p class="muted">Sales Performance Dashboard — from messy Excel to auto-refresh Power BI. Full breakdown inside.</p>
+
+        <div class="cs-grid">
+          <div class="cs-main">
+            <h3>Problem</h3>
+            <p>Shop owner tracked sales in 4 different Excel files. Monthly report took 2 days, numbers never matched.</p>
+            <h3>What I did</h3>
+            <ol class="cs-list">
+              <li>Cleaned 8k rows in Excel — dedup, fixed dates, XLOOKUP for product mapping</li>
+              <li>Built 3 SQL views: monthly sales, top products, region summary</li>
+              <li>Power BI: 1-page dashboard with KPIs, slicers, drill-through to invoice detail</li>
+            </ol>
+            <h3>Result</h3>
+            <div class="metrics">
+              <div><b>2 days → 2 hrs</b><span>monthly reporting</span></div>
+              <div><b>8k rows</b><span>cleaned + modelled</span></div>
+              <div><b>5 slicers</b><span>region / product / month</span></div>
+            </div>
+            <a href="case-study-sales.html" class="btn">Read full case study</a>
+            <span class="muted small" style="margin-left:12px">5 min read · SQL + DAX included</span>
+          </div>
+          <div class="cs-side">
+            <div class="quote-card">
+              <p>“Ab mujhe pata chalta hai kaunsa product kab slow hai. Report ka wait nahi karna padta.”</p>
+              <b>— Shop owner, freelance client</b>
+              <span class="muted small">Shared with permission, name hidden</span>
+            </div>
+            <div class="mini-list">
+              <b>Stack used</b>
+              <span>Excel · SQL (joins, views) · Power BI · DAX</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- journey -->
     <section id="journey" class="section alt reveal">
       <div class="wrap">
@@ -276,6 +320,39 @@
               <p>React docs, SQL practice, 1 project per month. Active on GitHub, building in public.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- notes / blog -->
+    <section id="notes" class="section reveal">
+      <div class="wrap">
+        <div class="sec-head">
+          <div>
+            <p class="eyebrow">Notes</p>
+            <h2>Things I learned, written simply</h2>
+            <p class="muted">Short notes from projects. No fluff, just what worked.</p>
+          </div>
+        </div>
+        <div class="blog-grid">
+          <a class="blog-card" href="blog/excel-cleaning.html">
+            <p class="date">Oct 2026 · 4 min</p>
+            <h3>How I clean 5k Excel rows without losing my mind</h3>
+            <p>Dedup, TRIM, date fixes, XLOOKUP checklist I reuse for every client file.</p>
+            <span class="link">Read →</span>
+          </a>
+          <a class="blog-card" href="blog/sql-joins.html">
+            <p class="date">Sep 2026 · 5 min</p>
+            <h3>SQL joins I actually use for dashboards</h3>
+            <p>INNER vs LEFT with 2 real examples from my sales dashboard views.</p>
+            <span class="link">Read →</span>
+          </a>
+          <a class="blog-card" href="blog/react-table.html">
+            <p class="date">Aug 2026 · 6 min</p>
+            <h3>Building a sortable React table (no library)</h3>
+            <p>useState + useMemo pattern I used in Trading Desk project.</p>
+            <span class="link">Read →</span>
+          </a>
         </div>
       </div>
     </section>

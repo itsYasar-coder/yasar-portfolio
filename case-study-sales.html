@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sales Dashboard Case Study — Yasar Memon</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="article">
+<a href="index.html" class="back">← Back to portfolio</a>
+<p class="eyebrow">Case study · Power BI + SQL</p>
+<h1>Sales dashboard: 2 days of Excel → 2 hours</h1>
+<p class="meta">Oct 2026 · 5 min read · Excel, SQL, Power BI</p>
+
+<h2>Client problem</h2>
+<p>A local shop tracked sales in 4 Excel files — different column names, duplicate bills, dates in 3 formats. Every month-end meant 2 days of copy-paste, and totals still didn't match.</p>
+
+<h2>What I did</h2>
+<ol>
+<li><b>Clean (Excel):</b> removed 400+ duplicates, TRIM + PROPER for names, fixed dates to YYYY-MM-DD, XLOOKUP to map product codes.</li>
+<li><b>Model (SQL):</b> 3 views — monthly sales, top products, region summary.</li>
+<li><b>Visualize (Power BI):</b> one page — 4 KPIs on top, trend line, top-5 bar, slicers for month / region / category, drill-through to bill detail.</li>
+</ol>
+<pre><code>-- monthly sales view
+SELECT DATE_TRUNC('month', bill_date) AS month,
+  region, SUM(amount) AS sales, COUNT(*) AS bills
+FROM sales_clean
+GROUP BY 1, 2;</code></pre>
+
+<h2>Result</h2>
+<p>Reporting went from 2 days to ~2 hours. Owner now checks slow products weekly instead of monthly. Two decisions came directly from the dashboard: stop stocking 2 dead SKUs, push one combo offer.</p>
+<div class="callout">Honest note: data was only 8k rows, so everything runs on free tools. No warehouse needed at this scale.</div>
+
+<h2>What I'd do next</h2>
+<ul>
+<li>Auto-refresh from Google Sheets instead of manual CSV</li>
+<li>Add profit (not just sales) once purchase cost sheet is clean</li>
+</ul>
+<p><a href="index.html#contact">Have similar messy data? Contact me →</a></p>
+</div>
+</body>
+</html>
